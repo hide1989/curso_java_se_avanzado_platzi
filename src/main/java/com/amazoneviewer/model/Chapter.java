@@ -1,6 +1,7 @@
 package com.amazoneviewer.model;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Chapter extends Movie {
 
@@ -65,7 +66,17 @@ public class Chapter extends Movie {
     @Override
     public void view() {
         // TODO Auto-generated method stub
-
+        super.view();
+        List<Chapter> chapters = getSerie().getChapters();
+        int chapterViewerCounter = 0;
+        for (Chapter chapter: chapters) {
+            if (chapter.getIsViewed()){
+                chapterViewerCounter++;
+            }
+        }
+        if(chapterViewerCounter == chapters.size()){
+            getSerie().setViewed(true);
+        }
     }
 
 }
