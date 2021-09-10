@@ -7,12 +7,23 @@ import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
-
+/**
+ * AmazoneViewer
+ * Es un programa de consola que simula la visualización de peliculas, series y capitulos,
+ * tambien leer books y magazines.
+ * te permite generar reportes con fecha y año del día
+ *
+ *  Como regla tiene que todos los elementos pueden ser visualizados excepto los magazine
+ *
+ * @author Platzi
+ * @version 1.1
+ * @since 2021
+ *
+ * */
 public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
         // TODO Auto-generated method stub
-
         showMenu();
 
     }
