@@ -1,11 +1,14 @@
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\Main.java
-\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Serie.java
-\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Magazine.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Book.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Movie.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Film.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Report.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\util\AmazonUtil.java
-\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\IVisualizable.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\amazoneviewer\dao\MovieDAO.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Chapter.java
 \\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Publication.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Serie.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\Magazine.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\db\IDBConnection.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\db\DataBase.java
+\\wsl$\Ubuntu-18.04\home\david\java_projects\Examples\amazoneviewer\src\main\java\com\amazoneviewer\model\IVisualizable.java

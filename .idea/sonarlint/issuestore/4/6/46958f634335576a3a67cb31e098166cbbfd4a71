@@ -1,0 +1,77 @@
+
+[	java:S106†"9Replace this use of System.out or System.err by a logger.(¸Ôı–ùÿÿÿÿ8‹Íµí¼/
+[	java:S106å"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+U	java:S106%"9Replace this use of System.out or System.err by a logger.(ŞŸÅ¶8‹Íµí¼/
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(ïÚâÀşÿÿÿÿ8‹ü°‚½/
+[	java:S106½"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+?
+java:S1643†"Use a StringBuilder instead.(°¤èÑıÿÿÿÿ8‹ü°‚½/
+Z
+java:S1854l"8Remove this useless assignment to local variable "exit".(Ö¢ÏĞúÿÿÿÿ8‹ü°‚½/
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(ÛÆùÿÿÿÿ8‹Íµí¼/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(…°§çûÿÿÿÿ8‹Íµí¼/
+[	java:S106Ÿ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+Z	java:S106+"9Replace this use of System.out or System.err by a logger.(î“»øÿÿÿÿ8‹Íµí¼/
+V	java:S106Â"9Replace this use of System.out or System.err by a logger.(ºŠû„8‹ü°‚½/
+[	java:S106Ã"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+V	java:S106–"9Replace this use of System.out or System.err by a logger.(†œˆä8‹Íµí¼/
+Z	java:S106N"9Replace this use of System.out or System.err by a logger.(¼àŠÿÿÿÿÿ8‹Íµí¼/
+U	java:S106^"9Replace this use of System.out or System.err by a logger.(î­™Â8‹Íµí¼/
+Z	java:S106e"9Replace this use of System.out or System.err by a logger.(¸Ôı–ùÿÿÿÿ8‹Íµí¼/
+[	java:S106¿"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+[	java:S106Æ"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+¡
+java:S1319™"‚The type of the "chaptersOfSerieSelected" object should be an interface such as "List" rather than the implementation "ArrayList".(êôåñ8‹ü°‚½/
+f
+java:S1192b"IDefine a constant instead of duplicating this literal " Visto: " 3 times.(ã‹ØÍ8‹ü°‚½/
+Z	java:S106*"9Replace this use of System.out or System.err by a logger.(´ê¼ôÿÿÿÿÿ8‹Íµí¼/
+V	java:S106Â"9Replace this use of System.out or System.err by a logger.(†œˆä8‹Íµí¼/
+U	java:S106b"9Replace this use of System.out or System.err by a logger.(ã‹ØÍ8‹ü°‚½/
+T
+java:S1135"2Complete the task associated to this TODO comment.(» æÿÿÿÿÿ8ˆôƒ½/
+Z	java:S106M"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+V	java:S106¾"9Replace this use of System.out or System.err by a logger.(ğÌ¢Ÿ8‹Íµí¼/
+[	java:S106Å"9Replace this use of System.out or System.err by a logger.(¸Ôı–ùÿÿÿÿ8‹Íµí¼/
+?
+java:S1643"Use a StringBuilder instead.(˜¨¤şÿÿÿÿ8‹ü°‚½/
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(Ãòœ¼øÿÿÿÿ8‹Íµí¼/
+?
+java:S1643³"Use a StringBuilder instead.(°¤èÑıÿÿÿÿ8‹ü°‚½/
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(ÖÓ®Ù8‹Íµí¼/
+[	java:S106ƒ"9Replace this use of System.out or System.err by a logger.(ûèÍ£úÿÿÿÿ8‹ü°‚½/
+?
+java:S1643ª"Use a StringBuilder instead.(»Ëªªûÿÿÿÿ8‹ü°‚½/
+Z	java:S106&"9Replace this use of System.out or System.err by a logger.(Ğ´ÿÿÿÿÿ8‹Íµí¼/
+[	java:S106‡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+`
+java:S3986¤"BMake sure that Week Year "Y" is expected here instead of Year "y".(–æ–Æ8‹ü°‚½/
+[	java:S106İ"9Replace this use of System.out or System.err by a logger.(²œìÎşÿÿÿÿ8‹Íµí¼/
+v
+java:S1192e"TDefine a constant instead of duplicating this literal "0. Regresar al Menu" 5 times.(¸Ôı–ùÿÿÿÿ8‹ü°‚½/
+Z	java:S106]"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+Z	java:S106f"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+[	java:S106€"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+Z	java:S106_"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(ŞÒ—üÿÿÿÿ8‹Íµí¼/
+[	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+X	java:S125G"<This block of commented-out lines of code should be removed.(ÃŞÆ†8‹ü°‚½/
+[	java:S106¦"9Replace this use of System.out or System.err by a logger.(¸Ôı–ùÿÿÿÿ8‹Íµí¼/
+[	java:S106á"9Replace this use of System.out or System.err by a logger.(¿½¿ÿÿÿÿÿ8‹ü°‚½/
+?
+java:S1643»"Use a StringBuilder instead.(˜¨¤şÿÿÿÿ8‹ü°‚½/
+?
+java:S1643ı"Use a StringBuilder instead.(»Ëªªûÿÿÿÿ8‹ü°‚½/
+[
+java:S2589ğ"8Remove this expression which always evaluates to "false"(ËãŸÊıÿÿÿÿ8‹ü°‚½/
+U	java:S106£"9Replace this use of System.out or System.err by a logger.(¡¡Ÿm8‹ü°‚½/
+[	java:S106—"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+[	java:S106ä"9Replace this use of System.out or System.err by a logger.(¸Ôı–ùÿÿÿÿ8‹Íµí¼/
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(ª³¿Öøÿÿÿÿ8‹Íµí¼/
+Y
+java:S2589v"7Remove this expression which always evaluates to "true"(ËãŸÊıÿÿÿÿ8‹ü°‚½/
+[	java:S106Ş"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+Z	java:S106~"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+Z	java:S106O"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+[	java:S106Ü"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹Íµí¼/
+[	java:S106§"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8‹ü°‚½/
+[	java:S106"9Replace this use of System.out or System.err by a logger.(–ùÁûÿÿÿÿ8‹Íµí¼/

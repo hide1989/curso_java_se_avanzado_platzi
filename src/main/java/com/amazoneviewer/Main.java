@@ -7,6 +7,8 @@ import java.io.FileNotFoundException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+
 /**
  * AmazoneViewer
  * Es un programa de consola que simula la visualización de peliculas, series y capitulos,
@@ -85,7 +87,7 @@ public class Main {
         }while(exit != 0);
     }
 
-    static ArrayList<Movie> movies = Movie.makeMoviesList();
+    static List<Movie> movies = Movie.makeMoviesList();
     public static void showMovies() throws FileNotFoundException {
         int exit = 1;
 

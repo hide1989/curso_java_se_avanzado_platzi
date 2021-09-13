@@ -1,0 +1,15 @@
+
+
+java:S1319""sThe type of the "chapters" object should be an interface such as "List" rather than the implementation "ArrayList".(ƒd8­ωμÿΌ/
+L
+java:S37402"/Provide the parametrized type for this generic.(­υΏ¥8­ωμÿΌ/
+T
+java:S1135@"2Complete the task associated to this TODO comment.(» ζÿÿÿÿÿ8­ωμÿΌ/
+T
+java:S1135"2Complete the task associated to this TODO comment.(ƒ® ϊÿÿÿÿ8­ωμÿΌ/
+T
+java:S1135("2Complete the task associated to this TODO comment.(» ζÿÿÿÿÿ8­ωμÿΌ/
+
+java:S13191"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ώ•©­8­ωμÿΌ/
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(£Θύϋÿÿÿÿ8­ωμÿΌ/
