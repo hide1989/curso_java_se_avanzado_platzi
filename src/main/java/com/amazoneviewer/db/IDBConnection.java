@@ -13,7 +13,7 @@ public interface IDBConnection {
             Class.forName(DRIVER);
             connection = DriverManager.getConnection(URL+DB, USER, PASSWORD);
             if (connection != null){
-                System.out.println("Se establecion la coneccion!!");
+                System.out.println("Se establecio la coneccion correctamente!!");
             }
         }catch (Exception e){
             e.printStackTrace();

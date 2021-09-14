@@ -4,9 +4,9 @@ import com.amazoneviewer.model.*;
 import com.amazoneviewer.util.AmazonUtil;
 
 import java.io.FileNotFoundException;
-import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -71,7 +71,7 @@ public class Main {
                     break;
                 case 6:
                     //Date date = new Date();
-                    makeReport(new Date());
+                    makeReport(LocalDateTime.now());
                     exit = 1;
                     break;
 
@@ -87,8 +87,9 @@ public class Main {
         }while(exit != 0);
     }
 
-    static List<Movie> movies = Movie.makeMoviesList();
+    static List<Movie> movies = new ArrayList<>();
     public static void showMovies() throws FileNotFoundException {
+        movies = Movie.makeMoviesList();
         int exit = 1;
 
         do {
@@ -281,25 +282,20 @@ public class Main {
         System.out.println();
     }
 
-    public static void makeReport(Date date) throws FileNotFoundException {
-        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd-h-m-s-S");
-        String dateString = df.format(date);
+    public static void makeReport(LocalDateTime date) throws FileNotFoundException {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+        String dateString = date.format(formatter);
         Report report = new Report();
 
         report.setNameFile("reporte" + dateString);
         report.setExtension("txt");
         report.setTitle(":: VISTOS ::");
 
-
-        SimpleDateFormat dfNameDays = new SimpleDateFormat("E, W MMM Y");
-        dateString = dfNameDays.format(date);
         String contentReport = "Date: " + dateString + "\n\n\n";
+        List<Movie> moviesByDate = new Movie().moviesByDate(date);
 
-        for (Movie movie : movies) {
-            if (movie.getIsViewed()) {
-                contentReport += movie.toString() + "\n";
-
-            }
+        for (Movie movie : moviesByDate) {
+            contentReport += movie.toString() + "\n";
         }
 
         for (Serie serie : series) {

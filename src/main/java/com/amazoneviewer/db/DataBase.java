@@ -19,10 +19,14 @@ public class DataBase {
     public static final String TMATERIAL = "year";
     public static final int[] ID_TMATERIAL = {1,2,3,4,5};
 
+    public static final String TUSER = "user";
+    public static final int TUSER_IDUSUARIO = 1;
+
     public static final String TVIEWED = "viewed";
     public static final String TVIEWED_IDMATERIAL = "id_material";
     public static final String TVIEWED_IDELEMENT = "id_element";
     public static final String TVIEWED_IDUSUARIO = "id_user";
+    public static final String TVIEWED_DATE = "date_viewed";
 
 
 

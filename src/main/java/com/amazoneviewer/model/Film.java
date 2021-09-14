@@ -34,6 +34,7 @@ public abstract class Film {
 
     public Film(){}
 
+
     public String getTitle() {
         return title;
     }
@@ -64,6 +65,13 @@ public abstract class Film {
     public void setYear(short year) {
         this.year = year;
     }
+    public boolean getIsViewed() {
+        return viewed;
+    }
+    public void setViewed(boolean viewed) {
+        this.viewed = viewed;
+    }
+
     public String isViewed() {
         String visto = "";
         if(viewed == true) {
@@ -75,12 +83,6 @@ public abstract class Film {
         return visto;
     }
 
-    public boolean getIsViewed() {
-        return viewed;
-    }
-    public void setViewed(boolean viewed) {
-        this.viewed = viewed;
-    }
 
 
     /**

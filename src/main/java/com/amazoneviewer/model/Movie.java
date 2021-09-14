@@ -2,7 +2,6 @@ package com.amazoneviewer.model;
 
 import com.amazoneviewer.amazoneviewer.dao.MovieDAO;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -71,8 +70,6 @@ public class Movie extends Film implements IVisualizable, MovieDAO {
         }else {
             setTimeViewed(0);
         }
-
-
     }
 
     public static List<Movie> makeMoviesList() {
@@ -87,10 +84,8 @@ public class Movie extends Film implements IVisualizable, MovieDAO {
     public void view() {
         setViewed(true);
         Date dateI = startToSee(new Date());
-
-        for (int i = 0; i < 100000; i++) {
-            System.out.println("..........");
-        }
+        Movie movie = new Movie();
+        movie.setMovieViewed(this);
 
         //Termine de verla
         stopToSee(dateI, new Date());
