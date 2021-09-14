@@ -8,6 +8,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Consumer;
 
 /**
  * AmazoneViewer
@@ -97,9 +99,8 @@ public class Main {
             System.out.println(":: MOVIES ::");
             System.out.println();
 
-            for (int i = 0; i < movies.size(); i++) { //1. Movie 1
-                System.out.println(i+1 + ". " + movies.get(i).getTitle() + " Visto: " + movies.get(i).isViewed());
-            }
+            AtomicInteger atomicInteger = new AtomicInteger(1);
+            movies.forEach(m -> System.out.println(atomicInteger.getAndIncrement() + ". " + m.getTitle() + " Visto: " + m.isViewed()));
 
             System.out.println("0. Regresar al Menu");
             System.out.println();
@@ -130,9 +131,8 @@ public class Main {
             System.out.println(":: SERIES ::");
             System.out.println();
 
-            for (int i = 0; i < series.size(); i++) { //1. Serie 1
-                System.out.println(i+1 + ". " + series.get(i).getTitle() + " Visto: " + series.get(i).isViewed());
-            }
+            AtomicInteger atomicInteger = new AtomicInteger(1);
+            series.forEach(s -> System.out.println(atomicInteger.getAndIncrement() + ". " + s.getTitle() + " Visto: " + s.isViewed()));
 
             System.out.println("0. Regresar al Menu");
             System.out.println();
@@ -161,10 +161,8 @@ public class Main {
             System.out.println(":: CHAPTERS ::");
             System.out.println();
 
-
-            for (int i = 0; i < chaptersOfSerieSelected.size(); i++) { //1. Chapter 1
-                System.out.println(i+1 + ". " + chaptersOfSerieSelected.get(i).getTitle() + " Visto: " + chaptersOfSerieSelected.get(i).isViewed());
-            }
+            AtomicInteger atomicInteger = new AtomicInteger(1);
+            chaptersOfSerieSelected.forEach(c -> System.out.println(atomicInteger.getAndIncrement() + ". " + c.getTitle() + " Visto: " + c.isViewed()));
 
             System.out.println("0. Regresar al Menu");
             System.out.println();
@@ -193,9 +191,8 @@ public class Main {
             System.out.println(":: BOOKS ::");
             System.out.println();
 
-            for (int i = 0; i < books.size(); i++) { //1. Book 1
-                System.out.println(i+1 + ". " + books.get(i).getTitle() + " Leído: " + books.get(i).isReaded());
-            }
+            AtomicInteger atomicInteger = new AtomicInteger(1);
+            books.forEach(b -> System.out.println(atomicInteger.getAndIncrement() + ". " + b.getTitle() + " Leído: " + b.isReaded()));
 
             System.out.println("0. Regresar al Menu");
             System.out.println();
@@ -217,12 +214,15 @@ public class Main {
     }
 
     public static void showMagazines() throws FileNotFoundException {
-        ArrayList<Magazine> magazines = Magazine.makeMagazineList();
+        List<Magazine> magazines = Magazine.makeMagazineList();
         int exit = 0;
         do {
             System.out.println();
             System.out.println(":: MAGAZINES ::");
             System.out.println();
+
+            AtomicInteger atomicInteger = new AtomicInteger(1);
+            magazines.forEach(z -> System.out.println(atomicInteger.getAndIncrement()+ ". " + z.getTitle()));
 
             for (int i = 0; i < magazines.size(); i++) { //1. Book 1
                 System.out.println(i+1 + ". " + magazines.get(i).getTitle());
@@ -249,15 +249,26 @@ public class Main {
         report.setNameFile("reporte");
         report.setExtension("txt");
         report.setTitle(":: VISTOS ::");
-        String contentReport = "";
+        final StringBuilder contentReport = new StringBuilder();
 
+        movies.stream().filter(movie -> movie.getIsViewed()).forEach(m -> contentReport.append(m.toString()).append("\n"));
+
+        /*
         for (Movie movie : movies) {
             if (movie.getIsViewed()) {
                 contentReport += movie.toString() + "\n";
 
             }
         }
+         */
 
+        Consumer<Serie> seriesEach = s -> {
+            List<Chapter> chapters = s.getChapters();
+            chapters.stream().filter(c -> c.getIsViewed()).forEach(c -> contentReport.append(c.toString()).append("\n"));
+        };
+        series.forEach(seriesEach);
+
+        /*
         for (Serie serie : series) {
             ArrayList<Chapter> chapters = serie.getChapters();
             for (Chapter chapter : chapters) {
@@ -268,7 +279,11 @@ public class Main {
             }
         }
 
+         */
 
+        books.stream().filter(b -> b.getIsReaded()).forEach(b -> contentReport.append(b.toString()).append("\n"));
+
+        /*
         for (Book book : books) {
             if (book.getIsReaded()) {
                 contentReport += book.toString() + "\n";
@@ -276,7 +291,9 @@ public class Main {
             }
         }
 
-        report.setContent(contentReport);
+         */
+
+        report.setContent(contentReport.toString());
         report.makeReport();
         System.out.println("Reporte Generado");
         System.out.println();
